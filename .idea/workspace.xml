@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffa2c1ad-b2a2-4fe1-87ce-4ad551664a64" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cocos2d-js-v3.13-lite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/layers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/p1_5.png" afterPath="$PROJECT_DIR$/res/p1_5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/layers.js" afterPath="$PROJECT_DIR$/src/layers.js" />
     </list>
     <ignored path="h5_feicui.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,8 +49,8 @@
       <file leaf-file-name="layers.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/layers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="334" column="32" selection-start-line="334" selection-start-column="32" selection-end-line="334" selection-end-column="32" />
+            <state relative-caret-position="222">
+              <caret line="260" column="67" selection-start-line="260" selection-start-column="67" selection-end-line="260" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -191,12 +190,12 @@
       <updated>1491092314874</updated>
       <workItem from="1491092316519" duration="7848000" />
       <workItem from="1491150463557" duration="599000" />
-      <workItem from="1491286453612" duration="23054000" />
+      <workItem from="1491286453612" duration="24625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31501000" />
+    <option name="totallyTimeSpent" value="33072000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="54" width="1600" height="846" extended-state="6" />
@@ -388,8 +387,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/layers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="334" column="32" selection-start-line="334" selection-start-column="32" selection-end-line="334" selection-end-column="32" />
+        <state relative-caret-position="222">
+          <caret line="260" column="67" selection-start-line="260" selection-start-column="67" selection-end-line="260" selection-end-column="67" />
           <folding />
         </state>
       </provider>

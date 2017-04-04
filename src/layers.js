@@ -251,9 +251,15 @@ var Layer1 = cc.Layer.extend({
         this.addChild(this.p1_4 ,0);
 
         //按钮
+        this.p1_5 = new cc.Sprite(res.p1_5);
+        this.p1_5.scale = this.scale();
+        this.p1_5.setPosition(cc.pAdd(cc.visibleRect.bottom, cc.p(0,  150)));
+        this.addChild(this.p1_5 ,2);
 
-
-
+        //
+        var label = cc.LabelTTF.create("长按屏幕 发射火箭", "Arial", 30);
+        label.setPosition(cc.pAdd(cc.visibleRect.bottom, cc.p(0,  50)));
+        this.addChild(label, 2);
 
 
         this.rocketStatus = 0; //0 初始；1 启动；2 运行；3 暂停；4 飞走
