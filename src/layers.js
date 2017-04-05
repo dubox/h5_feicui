@@ -25,8 +25,8 @@ var MainScene = cc.Scene.extend({
     initUI: function () {
 
         //背景色
-        var bgLayer = new cc.LayerColor(cc.color(233, 1, 15, 255));
-        //this.addChild(bgLayer, 0);
+        var bgLayer = new cc.LayerColor(cc.color(11, 15, 36, 255));
+        this.addChild(bgLayer, 0);
 
         /*水印
         var logo = new cc.Sprite(res.logo1);
@@ -43,7 +43,7 @@ var MainScene = cc.Scene.extend({
             this.arrow.opacity = 255;
         }, this)));
         this.arrow.runAction(arrowAction);
-        this.addChild(this.arrow, 1);
+        //this.addChild(this.arrow, 1);
 
         /**
         this.menuItemToggle = new cc.MenuItemToggle(new cc.MenuItemImage(res.bgm), new cc.MenuItemImage(res.bgm), this.toggleMusicCallback, this);
@@ -264,7 +264,6 @@ var Layer1 = cc.Layer.extend({
 
         this.rocketStatus = 0; //0 初始；1 启动；2 运行；3 暂停；4 飞走
 
-this.startRocket();
 
     },
 
@@ -272,7 +271,7 @@ this.startRocket();
         var     start = cc.p(this.rocket.getPosition())  ,
             ctrl1 = cc.p(cc.pAdd(this.rocket.getPosition() , cc.p(0,200))),
             ctrl2 = cc.p(cc.pAdd(this.rocket.getPosition() , cc.p(0,350))),
-            end = cc.p(cc.pAdd(this.rocket.getPosition() , cc.p(220,300)));
+            end = cc.p(cc.pAdd(this.rocket.getPosition() , cc.p(250,300)));
 
         var dn = new cc.DrawNode();
         //drawCubicBezier(origin, control1, control2, destination, segments, lineWidth, color)
@@ -317,7 +316,7 @@ this.startRocket();
 
                 _this.rocket.runAction(
                     cc.sequence(
-                        cc.spawn(cc.moveBy(1,0,200),new cc.scaleTo(1,0.8,0.8)),
+                        cc.spawn(cc.moveBy(1,0,150),new cc.scaleTo(1,0.8,0.8)),
 
                         cc.callFunc(function () {
                             _this.rocket.runAction(cc.spawn(
@@ -365,7 +364,7 @@ this.startRocket();
 
         setTimeout(function () {
 
-            //if(_this.listener.touchStatus != 1){_this.rocketStatus = 3;return;}
+            if(_this.listener.touchStatus != 1){_this.rocketStatus = 3;return;}
 
             _this.rocketStatus = 2;
             _this.runRocket();
