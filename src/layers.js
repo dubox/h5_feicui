@@ -318,7 +318,7 @@ var Layer1 = cc.Layer.extend({
                 _this.rocketStatus = 4;
                 _this.rocket.runAction(
                     cc.sequence(
-                        cc.spawn(cc.moveBy(1,0,150),new cc.scaleTo(1,0.8,0.8)),
+                        cc.spawn(cc.moveBy(1,0,150),new cc.scaleBy(1,0.05,0.05)),
 
                         cc.callFunc(function () {
                             _this.rocket.runAction(cc.spawn(
