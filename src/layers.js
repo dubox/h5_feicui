@@ -295,7 +295,7 @@ var Layer1 = cc.Layer.extend({
     },
 
 
-    //火箭飞行第一阶段 ： 火箭离地 飞到屏幕中间
+    //火箭飞行
     runRocket:function () {
 
 
@@ -308,12 +308,14 @@ var Layer1 = cc.Layer.extend({
             if(_this.rocketStatus != 2){clearInterval(st);return;}
 
             if(_this.rocket.getPositionY() <= cc.visibleRect.center.y - 150){
+                //第一阶段 ： 火箭离地 飞到屏幕中间
                 _this.rocket.runAction(cc.moveBy(0.5,0,100) )
             }else if( (_this.bg.getPositionY()+_this.bg.height * bg_scale) >= cc.visibleRect.top.y + 100){
+                //第二阶段 ： 火箭不动 背景往下走
                 _this.bg.runAction(cc.moveBy(0.5,0,-100));
             }else {
-
-
+                //第三阶段 ： 火箭延贝塞尔曲线飞走 消失
+                _this.rocketStatus = 4;
                 _this.rocket.runAction(
                     cc.sequence(
                         cc.spawn(cc.moveBy(1,0,150),new cc.scaleTo(1,0.8,0.8)),
